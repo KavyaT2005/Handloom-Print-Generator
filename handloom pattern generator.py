@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import colorchooser, filedialog
 from PIL import Image, ImageDraw, ImageTk
+import numpy as np
+import matplotlib.pyplot as plt
 class PatternGenerator:
     def __init__(self, root):
         self.root = root
@@ -51,4 +53,5 @@ class PatternGenerator:
                 self.pattern_image.save(filepath)
 root = tk.Tk()
 app = PatternGenerator(root)
+
 root.mainloop() 
