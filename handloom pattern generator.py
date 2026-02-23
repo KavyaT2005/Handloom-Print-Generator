@@ -7,7 +7,7 @@ class PatternGenerator:
     def __init__(self, root):
         self.root = root
         self.root.title("Handloom Pattern Generator")
-        self.warp_color = "#000000"
+        self.warp_color = "#000010"
         self.weft_color = "#ffffff"
         self.pattern_type = tk.StringVar(value="Plain")
         self.canvas_size = 400
@@ -58,4 +58,5 @@ root = tk.Tk()
 app = PatternGenerator(root)
 
 root.mainloop() 
+
 
