@@ -46,12 +46,16 @@ class PatternGenerator:
         tk_image = ImageTk.PhotoImage(image)
         self.canvas.configure(image=tk_image)
         self.canvas.image = tk_image
+
+    
     def save_image(self):
         if hasattr(self, 'pattern_image'):
             filepath = filedialog.asksaveasfilename(defaultextension=".png")
             if filepath:
                 self.pattern_image.save(filepath)
+                
 root = tk.Tk()
 app = PatternGenerator(root)
 
 root.mainloop() 
+
